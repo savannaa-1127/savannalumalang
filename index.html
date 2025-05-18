@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #FFF5FA; /* Soft blush */
+      margin: 0;
+      padding: 0;
+      color: #222222; /* Very dark gray for readability */
+    }
+
+    .header {
+      background-color: #C2185B; /* Strong pink */
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .nav {
+      margin-top: 10px;
+    }
+
+    .nav a {
+      color: #ffffff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 2;
+      padding-right: 20px;
+    }
+
+    .main-content h2 {
+      color: #AD1457; /* Deep rose */
+    }
+
+    .section {
+      background-color: #FCE4EC; /* Light pink */
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .section h3 {
+      color: #880E4F; /* Plum rose */
+    }
+
+    .section p {
+      color: #333;
+    }
+
+    .section a {
+      color: #D81B60; /* Magenta */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #F3E5F5; /* Soft lavender */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      color: #222;
+    }
+
+    .sidebar h3 {
+      color: #7B1FA2; /* Purple accent */
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+    }
+
+    .sidebar ul li a {
+      color: #8E24AA;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .main-content, .sidebar {
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Game Hub</h1>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="Dashboard.html">Dashboard</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About me.html">About Me</a>  
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="main-content">
+      <h2>Latest Game Reviews</h2>
+      <div class="section">
+        <h3>Starfield: A New Frontier</h3>
+        <p>Bethesda's ambitious space RPG promises vast exploration and epic storytelling. Does it reach the stars?</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="section">
+        <h3>Hogwarts Legacy</h3>
+        <p>Step into the wizarding world like never before. Is this magical adventure worth your time?</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h3>About Game Hub</h3>
+      <p>Your go-to source for the latest gaming news, reviews, and esports coverage.</p>
+      <h3>Popular Topics</h3>
+      <ul>
+        <li><a href="#">Best Games of 2025</a></li>
+        <li><a href="#">Top Esports Teams</a></li>
+        <li><a href="#">Upcoming Game Releases</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

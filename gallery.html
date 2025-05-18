@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lovely Music Gallery</title>
+  <style>
+    body {
+      background-color: #fff0f5; /* pale lavenderblush */
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #f8c8dc, #fcd7e2); /* pastel pink to light purple */
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 2px solid #f3a1c6;
+    }
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      color: #884d7d; /* muted purple */
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .gallery-item {
+      background: #fffafa;
+      border: 1px solid #f5e0e6;
+      border-radius: 8px;
+      margin: 1rem;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #f5e0e6;
+    }
+    .gallery-item h2 {
+      font-size: 1.3rem;
+      margin: 0.5rem 0 0 0;
+      color: #6d4e84; /* dark lavender */
+      text-align: center;
+    }
+    .gallery-item p {
+      font-size: 0.95rem;
+      margin: 0.3rem 0 0.8rem 0;
+      color: #5c4b69;
+      text-align: center;
+    }
+    audio {
+      width: 90%;
+      outline: none;
+      border-radius: 5px;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: 45%;
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery-item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lovely Music Gallery</h1>
+  </header>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="multo.jpg" alt="Album Cover - Multo">
+      <h2>Multo</h2>
+      <audio controls>
+        <source src="Multo - Cup of Joe (Official Lyric Video).mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="gallery-item">
+      <img src="dungka.png" alt="Album Cover - Dungka Sb - 19">
+      <h2>Dungka</h2>
+      <p>SB-19</p>
+      <audio controls>
+        <source src="SB19 'DUNGKA!' Music Video.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="gallery-item">
+      <img src="tao.jpg" alt="Album Cover - Tao lng">
+      <h2>TAO LANG</h2>
+      <audio controls>
+        <source src="Loonie - Tao Lang ft. Quest.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  </div>
+</body>
+</html>
